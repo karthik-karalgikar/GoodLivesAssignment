@@ -4,18 +4,37 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
-    "expo": "~51.0.8",
-    "expo-status-bar": "~1.12.1",
+    "@expo/webpack-config": "~19.0.1",
+    "@react-native-async-storage/async-storage": "1.21.0",
+    "browserify-zlib": "^0.2.0",
+    "expo": "^50.0.18",
+    "expo-auth-session": "~5.4.0",
+    "expo-crypto": "~12.8.1",
+    "expo-status-bar": "~1.11.1",
+    "expo-web-browser": "~12.8.2",
+    "path-browserify": "^1.0.1",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.6",
+    "react-native-web": "~0.19.6",
+    "react-native-zip-archive": "^6.1.2",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "expo-module-scripts": "^3.5.1",
+    "metro-config": "^0.80.9"
   },
   "private": true
 }
